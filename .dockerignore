@@ -1,0 +1,11 @@
+.git
+.DS_Store
+.env
+
+**/node_modules
+**/.next
+**/__pycache__
+**/*.pyc
+backend/.venv
+backend/.pytest_cache
+frontend/tsconfig.tsbuildinfo
