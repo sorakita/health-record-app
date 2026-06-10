@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Activity, ArrowRight, BookOpen, CalendarDays } from "lucide-react";
+import { Activity, ArrowRight, BookOpen } from "lucide-react";
 
 const docLinks = [
   { href: "/docs/requirements", label: "要件定義書" },
@@ -29,16 +29,11 @@ export default function TopPage() {
 
         <div className="grid items-center gap-10 lg:grid-cols-[1fr_460px]">
           <div>
-            <p className="mb-4 inline-flex items-center gap-2 rounded-md bg-emerald-50 px-3 py-2 text-sm font-bold text-emerald-800">
-              <CalendarDays className="h-4 w-4" aria-hidden />
-              睡眠・服薬・気分・行動を日付ごとに記録
-            </p>
             <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-zinc-950 sm:text-5xl">
-              毎日の体調と生活リズムを、ひとつの画面で見返せる記録アプリ
+              体調と生活状況を日々記録
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-zinc-600">
-              月次一覧、睡眠タイムライン、服薬マーク、気分スコア、日常行動をまとめて管理します。
-              認証なしの単一利用者向け構成です。
+              睡眠時間や服薬状況、気分の変化、日常の行動を記録・確認できます。
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link

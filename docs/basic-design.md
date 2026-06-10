@@ -118,7 +118,9 @@ Docker Compose では以下のサービスを起動する。
 
 ### Frontend
 
-Vercel にデプロイする。`NEXT_PUBLIC_API_BASE_URL` に GCP VM 上の Backend URL を設定する。
+Next.js の production server として起動する。ローカル環境では Docker Compose の `frontend` サービスで起動し、本番環境では VM やコンテナ実行基盤など任意の Next.js 実行環境に配置できる。
+
+Backend の接続先は `NEXT_PUBLIC_API_BASE_URL` で指定する。
 
 ### Backend
 
